@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    tools:context=".ui.view.UpdateOrderFragment">
+
+    <TextView
+        android:id="@+id/order_number"
+        style="@style/Widget.Inventory.TextView"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_user"
+        style="@style/Widget.Inventory.TextView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="User: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_number"/>
+    <EditText
+        android:id="@+id/order_user"
+        style="@style/Widget.Inventory.TextView"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tv_user"
+        app:layout_constraintTop_toBottomOf="@+id/order_number"/>
+
+    <TextView
+        android:id="@+id/tv_total"
+        style="@style/Widget.Inventory.TextView"
+        android:text="Total:"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_user"/>
+    <EditText
+        android:id="@+id/order_total"
+        style="@style/Widget.Inventory.TextView"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tv_total"
+        app:layout_constraintTop_toBottomOf="@+id/order_user"/>
+
+    <TextView
+        android:id="@+id/order_ticket"
+        style="@style/Widget.Inventory.TextView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_total"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/Widget.Inventory.TextView"
+        android:text="Oder Time:"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_ticket"/>
+    <EditText
+        android:id="@+id/order_time"
+        style="@style/Widget.Inventory.TextView"
+        android:layout_width="wrap_content"
+        android:inputType="datetime"
+        android:focusable="false"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/tv_time"
+        app:layout_constraintTop_toBottomOf="@+id/order_ticket"/>
+
+    <Button
+        android:id="@+id/save_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/btn_save"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_time" />
+
+    <Button
+        android:id="@+id/cancel_order"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/btn_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/save_order" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

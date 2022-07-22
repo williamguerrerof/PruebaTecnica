@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PruebaTecnica</string>
+    <string name="title_order_List">Recall</string>
+    <string name="item_detail_fragment_title">Order Details</string>
+    <string name="number_order">Order #</string>
+    <string name="user">User</string>
+    <string name="total">Total</string>
+    <string name="ticket">Ticket</string>
+    <string name="order_time">Order Time</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="title_update_order">Edit order</string>
+</resources>
